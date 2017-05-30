@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Ustawienia">
+        <ListPreference
+            android:key="pref_periodSet"
+            android:title="Okres zakupów"
+            android:dialogTitle="Okres zakupów"
+            android:entries="@array/pref_periodSet_entries"
+            android:entryValues="@array/pref_periodSet_values"
+            android:defaultValue="2"
+            />
+        <EditTextPreference
+            android:key="pref_password"
+            android:title="Hasło dostępu"
+            android:summary="Kliknij by zmienić hasło dostępu"
+            />
+        <Preference
+            android:title="Usuń wszystkie zakupy"
+            android:key="deleteAllPurchases"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>
